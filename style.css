@@ -54,3 +54,7 @@ body {
 .toast.info {
   color: rebeccapurple;
 }
+
+.toast.success {
+  color: green;
+}
