@@ -7,3 +7,5 @@ const messages = [
   "Messange Three",
   "Messange Four",
 ];
+
+button.addEventListener("click", () => createNotification());
