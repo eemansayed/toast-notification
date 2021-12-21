@@ -16,3 +16,7 @@ function createNotification() {
 
   notif.innerText = getRandomMessage();
 }
+
+function getRandomMessage() {
+  return messages[Math.floor() * messages.length];
+}
