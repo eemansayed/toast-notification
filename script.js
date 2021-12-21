@@ -8,13 +8,16 @@ const messages = [
   "Messange Four",
 ];
 
-button.addEventListener("click", () => createNotification());
+button.addEventListener("click", () =>
+  createNotification("This is invalid data")
+);
 
-function createNotification() {
+function createNotification(message = null, type = null) {
   const notif = document.createElement("div");
   notif.classList.add("toast");
+  notif.classList.add(type ? type : "info");
 
-  notif.innerText = getRandomMessage();
+  notif.innerText = message ? message : getRandomMessage();
 
   toasts.appendChild(notif);
 
